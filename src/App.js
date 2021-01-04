@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AboutClass from './AboutClass';
 import './App.css';
 import ColorPicker from './ColorPicker';
 import purple from '@material-ui/core/colors/purple';
