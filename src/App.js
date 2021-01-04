@@ -15,9 +15,9 @@ import brown from '@material-ui/core/colors/brown';
 import deepOrange from '@material-ui/core/colors/deepOrange';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 
-class App extends Component{
-  state={
-    color:[
+class App extends Component {
+  state = {
+    color: [
       red[500],
       purple[500],
       pink[500],
@@ -35,15 +35,16 @@ class App extends Component{
       teal[300]
     ]
   }
-    render(){
-    return(
-        <div className="App">
-          <i><h1 style={{fontFamily:'Arial',fontSize:'40px',color:'orange'}}> Color Picker</h1></i>
+  render() {
+    return (
+      <div className="App">
+        <i><h1 style={{ fontFamily: 'Arial', fontSize: '40px', color: 'orange' }}> Color Picker</h1></i>
 
-          <ColorPicker list={this.state.color}/>
-        </div>
+        <ColorPicker list={this.state.color} />
+        <span>Deployed</span>
+      </div>
     );
-    }
+  }
 }
 
 export default App;
